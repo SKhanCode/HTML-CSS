@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+
+    <style>
+        #one {
+            width: 20vw;
+            height: 40vh;
+            border: 3px solid red;
+            overflow: scroll;
+
+        }
+
+        #two {
+            width: 40vw;
+            height: 50vh;
+            border: 3px solid red;
+            overflow: auto;
+
+        }
+
+        #three {
+            width: 30vw;
+            height: 30vh;
+            border: 3px solid red;
+            overflow: hidden;
+
+        }
+
+        #four {
+            width: 30vw;
+            height: 25vh;
+            border: 3px solid red;
+            overflow: visible;
+
+        }
+
+        #five {
+            width: 30vw;
+            height: 25vh;
+            border: 3px solid red;
+            overflow-x: auto;
+            overflow-y: visible;
+            /*OR*/
+            overflow: Auto hidden;
+
+            /* or Overflow: X Y;
+                  Overflow: Horizontal Virtical */
+
+
+        }
+
+        #six {
+            width: 30vw;
+            height: 25vh;
+            border: 3px solid red;
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+        }
+    </style>
+</head>
+
+<body>
+    <b>Scroll--(Scroll deta hai)</b>
+    <div id="one">
+        Hello i, am Sohel Khan and this is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem alias sed
+        vero reprehenderit quisquam laboriosam praesentium blanditiis amet totam doloribus, assumenda rem a quam,
+        perferendis maiores, repellendus possimus dolor deserunt.
+    </div>
+    <br><b>Auto--(Agar zarurat hoti hain toh sroll deta hain)</b>
+    <div id="two">
+        Hello i, am Sohel Khan and this is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem alias sed
+        vero reprehenderit quisquam laboriosam praesentium blanditiis amet totam doloribus, assumenda rem a quam,
+        perferendis maiores, repellendus possimus dolor deserunt.
+    </div>
+    <br><b>Hidden--(Jitna size define hota hain box ka utne me hi content dikhata hain)
+    </b>
+    <div id="three">
+        Hello i, am Sohel Khan and this is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem alias sed
+        vero reprehenderit quisquam laboriosam praesentium blanditiis amet totam doloribus, assumenda rem a quam,
+        perferendis maiores, repellendus possimus dolor deserunt.
+    </div>
+    <br><b>visiable--(Jitna text define hota hain utna show hota hain chahe text overflow jaye box se)</b>
+    <div id="four">
+        Hello i, am Sohel Khan and this is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem alias sed
+        vero reprehenderit quisquam laboriosam praesentium blanditiis amet totam doloribus,
+    </div><br>
+    <br><b>(X or Y)--(Text ko upar upar-neecvhe se individualy handle kr sakte hain)</b>
+    <div id="five">
+        Hello i, am Sohel Khan and this is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem alias sed
+        vero reprehenderit quisquam laboriosam praesentium blanditiis amet totam doloribus,
+    </div><br>
+
+    <br><b>(White Space: nowrap(Top ki hi line me sara text aa jata hain isse)) Or (Text-overflow: ellipsis(Three
+        dots... show karta hain baki ke text me))</b>
+    <div id="five">
+        Hello i, am Sohel Khan and this is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem alias sed
+        vero reprehenderit quisquam laboriosam praesentium blanditiis amet totam doloribus, assumenda rem a quam,
+        perferendis maiores, repellendus possimus dolor deserunt.
+    </div>
+
+</body>
+
+</html>

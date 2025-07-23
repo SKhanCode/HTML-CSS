@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height: 300px;
+        border: 3px solid red;
+        display: grid;
+        /* grid-template-columns: 1fr 3fr 1fr; */
+        /* grid-template-columns: repeat(5, 1fr); */
+        /* grid-template-columns: repeat(5, minmax(100px 3fr)); */
+        grid-template-columns: repeat(5, 160px);
+        grid-template-rows: repeat(2, 160px);
+        justify-items: center;
+        align-items: center;
+        /* grid-template-areas: "nav nav  nav"
+        "side article article"
+        "footer footer footer"; */
+    }
+
+    .box {
+
+        height: 30px;
+        width: 30px;
+        border: 2px solid green;
+        margin: 10px;
+    }
+
+    .item1 {
+        /* grid-area: nav; */
+        background-color: aqua;
+
+    }
+
+    .item2 {
+        /* grid-area: side; */
+        background-color: rgb(228, 228, 66);
+        align-self: start;
+    }
+
+    .item3 {
+        /* grid-area: article; */
+        background-color: blanchedalmond;
+
+    }
+
+    .item4 {
+        /* grid-area: article; */
+        background-color: rgb(206, 122, 20);
+
+    }
+
+    .item5 {
+        /* grid-area: footer; */
+        background-color: gray;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box item1">1</div>
+        <div class="box item2">2</div>
+        <div class="box item3">3</div>
+        <div class="box item4">4</div>
+        <div class="box item5">5</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        :root {
+            --First_content: blue;
+            --Second_content: red;
+            --defpad: 10px;
+            --opacity: 0.5;
+        }
+
+
+        .nav {
+            background-color: var(--First_content);
+            color: white;
+            padding: 10px;
+            /* text-align: center; */
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+            margin: auto;
+            opacity: var(--opacity);
+        }
+        ul li:first-child{
+            /*Is type se override karne pr variable iska color nahi change kar pata. */
+            --First_content: green;  
+            background-color: var(--First_content);
+        }
+
+        .content {
+            background-color: var(--Second_content);
+            padding: 10px;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Note: Sirf variables ki value change krne se jaha jaha vo variables mention hai un sub ka color change ho jayenga.</h1>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, magnam? Sunt sit sequi magnam assumenda
+        mollitia cumque voluptatem dolore, est dicta aut nisi quam minima sint facere temporibus consectetur tenetur.
+    </div>
+
+</body>
+
+</html>

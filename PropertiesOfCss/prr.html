@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reports - Student Management System</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h2>Generate Report</h2>
+  <form action="report" method="get">
+    <label>Report Type:</label>
+    <select name="reportType">
+      <option value="attendance">Attendance Report</option>
+      <option value="students">Student Report</option>
+    </select>
+    <br>
+    <button type="submit">Generate</button>
+  </form>
+  <div id="reportResult">
+    <!-- Report results will be displayed here -->
+  <!-- </div>
+</body>
+</html> --> -->
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Attendance - Student Management System</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <style>
+    body {
+     font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+     margin: 0;
+     padding: 20px;
+    }
+    
+    h2 {
+     color: #333;
+    }
+    
+    form {
+     background: #fff;
+     padding: 20px;
+     margin-bottom: 20px;
+     border: 1px solid #ccc;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    select {
+     padding: 10px;
+     width: 100%;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+    }
+    
+    button {
+     padding: 10px 15px;
+     background-color: #333;
+     color: #fff;
+     border: none;
+    }
+    
+    nav ul {
+     list-style-type: none;
+    }
+    
+    nav ul li {
+     display: inline;
+     margin-right: 15px;
+    }
+    
+    </style>
+    <body>
+        <h2>Track Attendance</h2>
+        <form action="attendance" method="post">
+    <label>Student ID:</label>
+    <input type="number" name="studentId" required>
+    <br>
+    <label>Date:</label>
+    <input type="date" name="attendanceDate" required>
+    <br>
+    <label>Status:</label>
+    <select name="status">
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+    <br>
+    <button type="submit">Submit Attendance</button>
+  </form>
+</body>
+</html> -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>StudentManagementSystem</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <dependencies>
+    <!-- Servlet API -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- MySQL Connector -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.32</version>
+    </dependency>
+    <!-- Gson for JSON conversion -->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+  </dependencies>
+</project>

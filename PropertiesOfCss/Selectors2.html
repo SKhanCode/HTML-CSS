@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .boxes {
+        height: 200px;
+        width: 700px;
+        background-color: rgb(117, 169, 214);
+    }
+
+    .box1:first-child {
+
+        background-color: rgb(116, 227, 92);
+    }
+
+    .box1::first-line {
+        color: red;
+    }
+
+    .box1::first-letter {
+        color: black;
+    }
+
+    .boxes * {
+        margin: 5px;
+        color: orange;
+        border: 3px solid rgb(236, 86, 86);
+    }
+
+    p,
+    a,
+    .box1,
+    [data-color="primary"] {
+        margin-top: 25px;
+    }
+
+    .box1:nth-child(even) {
+        background-color: brown;
+    }
+
+    .box1:nth-last-child(1) {
+        background-color: blue;
+    }
+
+    .boxes::before {
+        /* Element ko CSS ke through dyanamicaly insret kiya ja sakta hain */
+        content: "Hello i am start css";
+    }
+
+    .boxes::After {
+
+        content: "I am back";
+        color: rgb(233, 70, 59);
+    }
+
+    ::selection {
+        color: green;
+        background-color: black;
+    }
+    input::placeholder{
+        color: yellowgreen;
+        background-color: antiquewhite;
+    }
+</style>
+
+<body>
+    <div class="boxes">
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni porro, earum, doloremque,
+        </div>
+        <div data-color="primary" class="box1">Hey i am a box</div>
+        <div class="box1">Hey i am a box</div>
+
+        <input type="text" placeholder="Hello brother how are you">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Assets/img/bg.jpg");
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 100%;
+    opacity: 0.3;
+    background-color: black;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+
+}
+
+nav img {
+    color: red;
+    position: relative;
+    z-index: 12;
+}
+
+nav button {
+    position: relative;
+    z-index: 12;
+}
+
+.Mtxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 15px;
+    padding: 18px;
+
+}
+
+.Mtxt> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.Mtxt :nth-child(2) {
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+}
+
+.Mtxt :nth-child(3) {
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.btn {
+    background-color: white;
+    border: none;
+    padding: 3px 12px;
+    z-index: 15;
+}
+.btn-sign{
+    background-color: red;
+    color: white;
+    
+}
+.btn-red {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}
+.main input{
+    background-color: rgba(19, 18, 18,0.5);
+    border: none;
+    border-radius: 4px;
+    padding: 2px 10px 2px 5px;
+}
+.ED {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}

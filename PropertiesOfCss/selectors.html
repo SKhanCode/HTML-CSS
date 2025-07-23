@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors In Css</title>
+</head>
+<style>
+    /* Element Selectors-- */
+    div {
+        color: red;
+        background-color: yellow;
+    }
+
+    /* Class selectors-- */
+    .green {
+        background-color: green;
+    }
+
+    /* Id selectors-- */
+    #Blue {
+        background-color: blue;
+    }
+
+    /* Child seletors-- */
+    div>p {
+        color: black;
+        background-color: yellow;
+    }
+
+    /* Descendand seletors-- (div ke andar kahi bhi agr p hain toh property lag jayengi*/
+    div p {
+        color: black;
+        background-color: aqua;
+    }
+
+    /* Pseudo selectors-- */
+    a:visited {
+        color: rgb(212, 4, 4);
+        
+    }
+    a:active{
+        color: aqua;
+        background-color: yellow;
+    }
+    a:hover{
+        background-color: magenta;
+    }
+    p:first-child{
+        background-color: chocolate;
+    }
+</style>
+
+<body>
+    <div class="one">
+        <p>Hello i am One</p>
+        <p>Hello i am Second</p>
+    
+    </div>
+
+    *For Element selectors:---
+    <div class="red">
+        <h1> Hello How are you</h1>
+
+    </div>
+
+    *For Class selectors:---
+    <div class="green">
+        <h1> How are you </h1>
+    </div>
+    *For Id selectors:---
+    <div id="Blue">
+        <h1> How are you i m Blue </h1>
+    </div>
+
+    *For Child selectors:---
+    <div>
+        <h1> How are you </h1>
+        <p>Hey i m direct in div tag so im visable</p>
+        <article>
+            <p>Because i m under the artical tag so i m not Visable</p>
+        </article>
+    </div>
+
+    *For Descendant selectors:---
+    <div id="Blue">
+        <h1> How are you </h1>
+        <article>
+            <p>Hey i am show after the under of articals tag beacuse its descendant selectors!</p>
+
+        </article>
+    </div>
+
+    *For Pseudo selectors:---
+    <br>
+    <br>
+    <a href="https://www.google.com"> Google link</a>
+    <a href="https://www.facebook.com"> facebook link</a>
+
+</body>
+
+</html>

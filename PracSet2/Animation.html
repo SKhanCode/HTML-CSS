@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height: 400px;
+        width: 1000px;
+        background-color: blue;
+    }
+
+    .box1 {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border-radius: 20px;
+        animation-name: SohelsAnimation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        /* animation-timing-function: ease-in-out;
+        animation-delay: 1s; */
+        /* animation-play-state: running;
+        animation-play-state: paused; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: SohelsAnimation2 2s ease-in-out 3s infinite alternate; */
+    }
+
+    @keyframes SohelsAnimation {
+        from {}
+
+        to {
+            transform: translateX(1000px);
+        }
+    }
+    @keyframes SohelsAnimation2 {
+       0%{
+        transform: rotate(50deg);
+       }
+       50%{
+        transform: rotate(100deg);
+       }
+       80%{
+        transform: rotate(250deg);
+       }
+       100%{
+        transform: rotate(320deg);
+       }
+    
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+
+</body>
+
+</html>
